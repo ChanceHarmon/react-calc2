@@ -4,8 +4,8 @@ import ComputationScreen from "./ComputationScreen/ComputationScreen";
 
 const screen = () => (
   <section className="screen">
-    <ComputationScreen />
     <ResultScreen />
+    <ComputationScreen />
   </section>
 );
 

@@ -1,37 +1,55 @@
-.calculator {
+.app {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  width: 400px;
-  height: 600px;
-  margin-top: 100px;
-  margin-left: 33%;
+  align-items: center;
+
+}
+.calculator {
+  box-sizing: border-box;
+  width: 40%;
+  height: 80vh;
   border: black solid 1px;
   background: rgb(24, 23, 23);
 }
 .screen {
-  height: 20vh;
+  height: 25vh;
   width: 100%;
-  padding: 0 2rem;
+  padding-bottom: 20px;
   overflow: hidden;
   white-space: no-wrap;
   color: red;
   background: white;
 }
-.computation-screen{
-  height: 10vh;
-  font-size: 3em;
+.result-screen{
+  height: 19vh;
+  font-size: 8em;
   font-weight: 200;
+  margin-right: 3px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-.result-screen {
+.computation-screen {
   height: 6vh;
-  margin-top: 20px;
   font-size: 2.5em;
+  margin-right: 3px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+/* note height for keypad, it is designed for 5 rows based on our total height, minus the screen height. Need to adjust when adding more rows */
+.keypad_row {
+  height: 11vh;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+/* same note for height on this */
+.keypad {
+  height: 55vh;
+  width: 100%;
 }
