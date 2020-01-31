@@ -10,7 +10,7 @@
 .calculator {
   box-sizing: border-box;
   width: 40%;
-  height: 80vh;
+  height: 82.5vh;
   border: black solid 1px;
   background: rgb(24, 23, 23);
 }
@@ -52,4 +52,32 @@
 .keypad {
   height: 55vh;
   width: 100%;
+}
+.button {
+  width: 25%;
+  height: 100%;
+  font-size: 3em;
+  background: white;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+}
+.button:hover {
+  color: white;
+  background: red;
+}
+.button:active {
+  transform: scale(.95);
+}
+.button--large{
+  width: 50%;
+  color: white;
+  background: #888888;
+  transition: all .2s;
+}
+.button--large:hover {
+  color: white;
+  background: red;
 }
