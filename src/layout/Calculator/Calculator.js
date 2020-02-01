@@ -13,7 +13,8 @@ class Calculator extends React.Component {
     const pressedButton = event.target.innerHTML;
 
     //first checking if button press is clear
-    if (pressedButton === 'C') return this.clear();
+    if (pressedButton === 'Clear') //return this.clear();
+      this.setState({ equation: '', result: 0 });
     //first check is to see if it a number
     //second check is decimal key, add it to the string of equation
     else if ((pressedButton >= '0' && pressedButton <= '9') || pressedButton === '.')
@@ -43,7 +44,7 @@ class Calculator extends React.Component {
     return (
       <main className="calculator">
         <Screen equation={this.state.equation} result={this.state.result} />
-        <Keypad></Keypad>
+        <Keypad onButtonPress={this.onButtonPress} />
       </main>
     );
   }
